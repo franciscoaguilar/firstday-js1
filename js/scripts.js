@@ -124,6 +124,7 @@ switch (firstName.toLowerCase()) {
   break;
 }
 */
+// HW DAY 3
 let firstName = prompt('what is your first name ', 'tom');
 let userColor = prompt("whats your fav color: red, orange, yellow, green, blue, pink, purple, black, white, and grey ");
 switch (userColor.toLowerCase()){
@@ -158,6 +159,6 @@ switch (userColor.toLowerCase()){
   alert(firstName + " grey cars are nice");
   break;
   default:
-  alert(firstName + " hey that wasnt a color ");
+  alert(firstName + " hey that was not a color ");
   break;
 }
