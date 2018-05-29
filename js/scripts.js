@@ -1,4 +1,6 @@
+
 /*
+
 var myName = "Francisco";
 var myExpectations = "Learn how to enhance websites using Javascript"
 var myHobbie = "My favorite hobbie is vinyl wrapping cars"
@@ -22,6 +24,7 @@ var myName="Francisco";
 let birthday = new Date('05/09/1995');
 
 
+
 /*
 const obj= new String ( "learn java");
 console.log(obj);
@@ -29,7 +32,11 @@ alert(user);
 let userAnswer= confirm("did you brush teeth");
 console.log(userAnswer);
 */
+
 /*
+
+
+
 let favriotMovie = "Fast and furious ";
 let favriotfood = "pupusas ";
 const year = new Date('march 24, 2008');
@@ -51,6 +58,7 @@ confirm (favriotMovie + year);
  alert(userName);
  alert(userLastName);
  confirm(userb);
+
  */
 
 
@@ -162,3 +170,4 @@ switch (userColor.toLowerCase()){
   alert(firstName + " hey that was not a color ");
   break;
 }
+
