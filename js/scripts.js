@@ -107,7 +107,8 @@ if (firstNumber<secondNumber){
   alert("yay");
 }
 else alert("boo");
-*/ 
+*/
+/*
 let firstName = prompt('what is your first name ', 'tom');
 switch (firstName.toLowerCase()) {
   case 'tom':
@@ -120,5 +121,43 @@ switch (firstName.toLowerCase()) {
     break;
   default:
   alert('never heard of it ');
+  break;
+}
+*/
+let firstName = prompt('what is your first name ', 'tom');
+let userColor = prompt("whats your fav color: red, orange, yellow, green, blue, pink, purple, black, white, and grey ");
+switch (userColor.toLowerCase()){
+  case 'red':
+  alert(firstName + " i love that color");
+  break;
+  case 'orange':
+  alert(firstName + " oranges are yummy ");
+  break;
+  case 'yellow':
+  alert(firstName + " have yu ever slipped on a bannnana ");
+  break;
+  case 'green':
+  alert(firstName + " green is an okay color");
+  break;
+  case 'blue':
+  alert(firstName + " the color of the sky ");
+  break;
+  case 'pink':
+  alert(firstName + " okay you choose pink");
+  break;
+  case 'purple':
+  alert(firstName + " thats the color of barnie");
+  break;
+  case 'black':
+  alert(firstName + " black goes with anything");
+  break;
+  case 'white':
+  alert(firstName + " white is a boring color");
+  break;
+  case 'grey':
+  alert(firstName + " grey cars are nice");
+  break;
+  default:
+  alert(firstName + " hey that wasnt a color ");
   break;
 }
