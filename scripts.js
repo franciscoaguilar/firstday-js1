@@ -1,6 +1,3 @@
-
-
-// day 4 homework
 var topMovie1 =['1: coco ', 'Miguel '];
 var topMovie2 =['2: instructions not included ', 'Valentin '];
 var topMovie3 = [ '3: spiderman ', 'peter '];
