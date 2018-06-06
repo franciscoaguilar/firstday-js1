@@ -1,5 +1,4 @@
 
-
 // Creates an array of things you need or want to do this weekend by collecting three todos from the user.
 let todo1 = prompt("first thing you will do this weekend: ", "program ");
 let todo2 = prompt("second thing you will do this weekend: ", "tint tailights ");
