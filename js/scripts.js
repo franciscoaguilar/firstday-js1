@@ -1,38 +1,51 @@
 
-// Creates an array of things you need or want to do this weekend by collecting three todos from the user.
-let todo1 = prompt("first thing you will do this weekend: ", "program ");
-let todo2 = prompt("second thing you will do this weekend: ", "tint tailights ");
-let todo3 = prompt("third thing you will do this weekend: ", 'vinyl wrap roof ');
-var todo = [todo1, todo2, todo3];
-
-// Using a for loop, change the items in the array by adding days they should be completed by to each index.
-for( var i = 0; i < todo.length; i++){
-
-  todo[0] = [  "saturday"] ;
-  todo[1] = ["friday" ];
-  todo[2] = ['sunday' ];
+// SQUARES A NUMBER
+function squareNumber(number){
+  if ( !isNaN(number)){
+  return number * number;
+ }
+   else{
+     alert("NaN");
+      usersNumber = prompt('give another answer', '6');
+      squareNumber(parseInt(usersNumber));
+  }
 };
-alert(todo);
-// Using a while loop, find the task that will take the longest and log it to the console.
-var todo = [todo1, todo2, todo3];
- var i =0;
- while ( i < todo.length ){
-   todoLongest = todo[2]
-   i++;
- };
-console.log(todoLongest);
-// Using a do while loop, add the string 'done' to all the tasks other than the one that will take the longest
-var todo = [todo1, todo2, todo3];
- var i = 0;
- var text = "";
- let todDone =[];
-do {
+let usersNumber = prompt('give a number to square', '6');
+let answer = squareNumber(usersNumber);
+alert(answer);
 
-  text += todo[i] + " done ";
-  i++;
+// CAPITILIZE THE FIRST LETTER OF A STRING AND ADDS A PERIOD IF IT DOESNT ALREADY HAVE IT
+function capFirstletter(word){
+  if (usersWord.endsWith('.')){
+    return word[0].toUpperCase() + word.substring(1);
+  }
+  else {
+    return   word[0].toUpperCase() + word.substring(1) + '.';
+  }
 
+};
+let usersWord = prompt('give a word and ill capitilize the first letter', 'apple.');
+let upperWord = capFirstletter( usersWord);
+alert(upperWord);
+
+// SPLITS WORD IN HALF AND REVERSES IT
+function flipsWord (flip){
+  return flip.substring(flip.length/2) + flip.charAt(0) + flip.charAt(1);
 }
-while ( i < todo.length &&  ( todo[i] != todo[2]));
-// Finally, alert all the tasks that are marked done in the todo array.
-alert (text);
+
+
+let askFlippedWord = prompt('ADDS FIRST HALF OF THE WORD TO THE BACK', 'word');
+let resultsFlippedWord = flipsWord(askFlippedWord);
+alert (resultsFlippedWord);
+
+// CHECKS IF THE WWORD IS PALINDROME
+function checkIfpalindrome(palin){
+   let reverse = palin.split("").reverse().join("");
+   return reverse == palin;
+ }
+let askPalin = prompt('give a word to check if it is palindrome', 'civic');
+let resultsFlipped = checkIfpalindrome(askPalin);
+alert(resultsFlipped);
+
+
 
