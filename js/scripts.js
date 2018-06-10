@@ -1,3 +1,4 @@
+
 // SQUARES A NUMBER
 function squareNumber(number){
   if ( !isNaN(number)){
@@ -9,7 +10,6 @@ function squareNumber(number){
       squareNumber(parseInt(usersNumber));
   }
 };
-
 let usersNumber = prompt('give a number to square', '6');
 let answer = squareNumber(usersNumber);
 alert(answer);
@@ -33,6 +33,7 @@ function flipsWord (flip){
   return flip.substring(flip.length/2) + flip.charAt(0) + flip.charAt(1);
 }
 
+
 let askFlippedWord = prompt('ADDS FIRST HALF OF THE WORD TO THE BACK', 'word');
 let resultsFlippedWord = flipsWord(askFlippedWord);
 alert (resultsFlippedWord);
@@ -45,3 +46,6 @@ function checkIfpalindrome(palin){
 let askPalin = prompt('give a word to check if it is palindrome', 'civic');
 let resultsFlipped = checkIfpalindrome(askPalin);
 alert(resultsFlipped);
+
+
+
