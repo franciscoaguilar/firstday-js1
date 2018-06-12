@@ -1,51 +1,45 @@
+// let body =
+// document.getElementsByTagName('body');
+// // array
+// // console.log(body[0]);
+// let classes =
+// document.getElementsByClassName('my-header');
+// // console.log(classes[0]);
+// let id =
+// document.getElementById('my-paragragh');
+// console.log(id)
+//
+// // Newer methods:
+// let tags = document.querySelector('body');
+// console.log(tag);
+//
+// let myclass =
+// document.querySelector('.my-header');
+// console.log(myclass);
+//
+// let myId = document.querySelector('#my-paragragh');
+// console.log(myId);
+//
+// // return array with all that you are looking for
+// let tags =
+// document.querySelectorAll('body');
 
-// SQUARES A NUMBER
-function squareNumber(number){
-  if ( !isNaN(number)){
-  return number * number;
- }
-   else{
-     alert("NaN");
-      usersNumber = prompt('give another answer', '6');
-      squareNumber(parseInt(usersNumber));
+
+function queryDom(methodName, element){
+  switch(methodName.toLowerCase()){
+    case 'getelementbytagname':
+      documenet.querySelector(element);
+      break;
+      case 'getelementclassname':
+        documenet.querySelector(element);
+        break;
+      // add 4 more
+      case 'queryselector' :
+      document.querrySelector(`.${element}`);
+      break;
+    default;
+    break;
   }
-};
-let usersNumber = prompt('give a number to square', '6');
-let answer = squareNumber(usersNumber);
-alert(answer);
 
-// CAPITILIZE THE FIRST LETTER OF A STRING AND ADDS A PERIOD IF IT DOESNT ALREADY HAVE IT
-function capFirstletter(word){
-  if (usersWord.endsWith('.')){
-    return word[0].toUpperCase() + word.substring(1);
-  }
-  else {
-    return   word[0].toUpperCase() + word.substring(1) + '.';
-  }
-
-};
-let usersWord = prompt('give a word and ill capitilize the first letter', 'apple.');
-let upperWord = capFirstletter( usersWord);
-alert(upperWord);
-
-// SPLITS WORD IN HALF AND REVERSES IT
-function flipsWord (flip){
-  return flip.substring(flip.length/2) + flip.charAt(0) + flip.charAt(1);
 }
-
-
-let askFlippedWord = prompt('ADDS FIRST HALF OF THE WORD TO THE BACK', 'word');
-let resultsFlippedWord = flipsWord(askFlippedWord);
-alert (resultsFlippedWord);
-
-// CHECKS IF THE WWORD IS PALINDROME
-function checkIfpalindrome(palin){
-   let reverse = palin.split("").reverse().join("");
-   return reverse == palin;
- }
-let askPalin = prompt('give a word to check if it is palindrome', 'civic');
-let resultsFlipped = checkIfpalindrome(askPalin);
-alert(resultsFlipped);
-
-
-
+myClass.addEventListener('click')
