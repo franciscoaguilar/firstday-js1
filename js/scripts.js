@@ -77,15 +77,15 @@ let h1 =document.querySelector('h1');
 
 
 button.addEventListener('click', e =>{
-e.target.textContent ="goodbye cats"
-})
+e.target.textContent ="goodbye cats";
+});
 
 div.addEventListener('mouseenter', e =>{
 e.target.style.backgroundColor = "#e40007";
 console.log(e);
-})
+});
 
 h1.addEventListener('mouseleave', e =>{
 e.target.style.color = "#00ffff"
-console.log(e);
-})
+
+});
