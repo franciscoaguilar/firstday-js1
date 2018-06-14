@@ -1,51 +1,91 @@
+// let body = document.getElementsByTagName('body'); //array
+//
+// let classes = document.getElementsByClassName("my-header");
+//
+// let id = document.getElementById("my-paragraph");
+//
+// //Newer methods:
+// let tag = document.querySelector('body');
+//
+// let myClass = document.querySelector('.my-header');
+//
+// let myId = document.querySelector('#my-paragraph');
+// console.log(myId);
+//
+// let tags = document.querySelectorAll('body');
+//
+// //TRY IT OUT
+// function queryDom(methodName, element) {
+//   switch(methodName.toLowerCase()) {
+//     case 'getelementsbytagname':
+//       console.log(document.getElementsByTagName(element));
+//       break;
+//     case 'getelementsbyclassname':
+//       console.log(document.getElementsByClassName(element));
+//       break;
+//     case 'getelementbyid':
+//       console.log(document.getElementById(element));
+//       break;
+//     case 'queryselector':
+//       switch(requestQuerySelectorType()) {
+//         case 'class':
+//           console.log(document.querySelector(`.${element}`));
+//           break;
+//         case 'id':
+//           console.log(document.querySelector(`#${element}`));
+//           break;
+//         default:
+//           console.log(document.querySelector(element));
+//           break;
+//       }
+//       break;
+//       case 'queryselectorall':
+//       switch(requestQuerySelectorType()) {
+//         case 'class':
+//           console.log(document.querySelectorAll(`.${element}`));
+//           break;
+//         case 'id':
+//           console.log(document.querySelectorAll(`#${element}`));
+//           break;
+//         default:
+//           console.log(document.querySelectorAll(element));
+//           break;
+//       }
+//       break;
+//     default:
+//       break;
+//   }
+// };
+//
+// function requestQuerySelectorType() {
+//   return prompt("Which of the three query types do you want me to use?", "please answer 'class', 'id', or 'tag'");
+// };
+//
+// queryDom(prompt('what method do you want to use?'), prompt('what do you want to query for?'));
+// let myClass = document.querySelector('.my-header');
+//
+// myClass.addEventListener(
+//   'click', //first arg
+//   e =>{
+//     alert('you clicked on me!!');
+//   }
+// )
 
-// SQUARES A NUMBER
-function squareNumber(number){
-  if ( !isNaN(number)){
-  return number * number;
- }
-   else{
-     alert("NaN");
-      usersNumber = prompt('give another answer', '6');
-      squareNumber(parseInt(usersNumber));
-  }
-};
-let usersNumber = prompt('give a number to square', '6');
-let answer = squareNumber(usersNumber);
-alert(answer);
-
-// CAPITILIZE THE FIRST LETTER OF A STRING AND ADDS A PERIOD IF IT DOESNT ALREADY HAVE IT
-function capFirstletter(word){
-  if (usersWord.endsWith('.')){
-    return word[0].toUpperCase() + word.substring(1);
-  }
-  else {
-    return   word[0].toUpperCase() + word.substring(1) + '.';
-  }
-
-};
-let usersWord = prompt('give a word and ill capitilize the first letter', 'apple.');
-let upperWord = capFirstletter( usersWord);
-alert(upperWord);
-
-// SPLITS WORD IN HALF AND REVERSES IT
-function flipsWord (flip){
-  return flip.substring(flip.length/2) + flip.charAt(0) + flip.charAt(1);
-}
+let button =document.querySelector('button');
+let div = document.querySelector('div');
+let h1 =document.querySelector('h1');
 
 
-let askFlippedWord = prompt('ADDS FIRST HALF OF THE WORD TO THE BACK', 'word');
-let resultsFlippedWord = flipsWord(askFlippedWord);
-alert (resultsFlippedWord);
+button.addEventListener('click', e =>{
+e.target.textContent ="goodbye cats";
+});
 
-// CHECKS IF THE WWORD IS PALINDROME
-function checkIfpalindrome(palin){
-   let reverse = palin.split("").reverse().join("");
-   return reverse == palin;
- }
-let askPalin = prompt('give a word to check if it is palindrome', 'civic');
-let resultsFlipped = checkIfpalindrome(askPalin);
-alert(resultsFlipped);
+div.addEventListener('mouseenter', e =>{
+e.target.style.backgroundColor = "#e40007";
+console.log(e);
+});
 
+h1.addEventListener('mouseleave', e =>{
+e.target.style.color = "#00ffff"
 
-
+});
